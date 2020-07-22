@@ -52,7 +52,7 @@ export PYTHONUNBUFFERED=1
 
 echo "$config" > ~/.condarc
 
-conda install --yes --quiet conda-forge-ci-setup
+conda install --yes --quiet conda-forge-ci-setup quetz-client
 source run_conda_forge_build_setup
 
 # testing purposes: get conda-build from defaults

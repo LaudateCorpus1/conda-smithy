@@ -74,6 +74,8 @@ export UPLOAD_PACKAGES="${UPLOAD_PACKAGES:-True}"
            -e CI \
            -e FEEDSTOCK_NAME \
            -e CPU_COUNT \
+           -e QUETZ_URL \
+           -e QUETZ_API_KEY \
 {%- for secret in secrets %}
            -e {{ secret }} \
 {%- endfor %}
